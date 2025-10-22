@@ -6,7 +6,7 @@ The goal of this session was to provide a practical, high-level overview of the 
 
 ## The Four Pillars of OOP
 
-Review your session notes and code examples for a deeper understanding of how these were practically applied:
+Review the code examples, reseach and ask as many question as you can for a deeper understanding of how these were practically applied:
 
 | Principle     | Focus                                                                                                                                                             |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
