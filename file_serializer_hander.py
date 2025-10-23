@@ -8,8 +8,16 @@ class FileSerializerHandler(ABC):
     def serialize(self, data):
         pass
 
+    @abstractmethod
+    def deserialize(self, data):
+        pass
+
     def write(self, data):
-        # w => write
-        # b => byte
+        # w => write, b => byte
         with open(self.filename, "wb") as file:
             file.write(self.serialize(data))
+
+    def read(self):
+        # r => read, b => byte
+        with open(self.filename, "rb") as file:
+            return self.deserialize(file.read())

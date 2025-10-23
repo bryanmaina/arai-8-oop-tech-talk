@@ -1,4 +1,4 @@
-from pickle import dumps
+from pickle import dumps, loads
 
 from file_serializer_hander import FileSerializerHandler
 
@@ -9,3 +9,6 @@ class PickleFileHandler(FileSerializerHandler):
 
     def serialize(self, data):
         return dumps(data)
+
+    def deserialize(self, data):
+        return loads(data)

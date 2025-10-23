@@ -8,9 +8,11 @@ def main():
 
     json_handler = JsonFileHandler("./data.json")
     json_handler.write(data)
+    print(json_handler.read())
 
     pickle_handler = PickleFileHandler("./data.pkl")
     pickle_handler.write(data)
+    print(pickle_handler.read())
 
     assert isinstance(json_handler, FileSerializerHandler)
     assert isinstance(pickle_handler, FileSerializerHandler)
